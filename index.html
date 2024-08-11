@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News hub</title>
+    <link rel="icon" href="img/NEWS-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="navbar">
+         <nav>
+            <div><a href=""><img class="logo" src="img/NEWS-removebg-preview.png" alt=""></a></div>
+            <div class="nav-links">
+                <ul>
+                    <li id="ipl">IPL</li>
+                    <li id="finance">Finance</li>
+                    <li id="politics">Politics</li>
+                </ul>
+             </div>
+             <div class="search">
+                <input type="text" placeholder="e.g. Science" class="news-input">
+                <button class="search-btn">Search</button>
+             </div>
+            
+         </nav>
+    </section>
+    <section>
+        <div class="news-cards">
+            
+        </div>
+    </section>
+    <template id="template">
+        <div class="card">
+            <div class="news-img"><img src="https://placehold.co/400x200" alt="error"></div>
+            <div class="card-content">
+                <h3 id="card-title">This is card Titile</h3>
+                <h6 id="card-source">End Gadget</h6>
+                <p id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci aliquam, a eveniet suscipit, accusantium vitae laudantium tenetur molestias natus commodi, quas officia nisi rem!</p>
+            </div>
+        </div> 
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>

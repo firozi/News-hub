@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+}
+p{
+    font-family: "Roboto";
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+body{
+    font-family: "Poppins";
+    box-sizing: border-box;
+    color: var(--primary-text-color);
+}
+.logo{
+    width: 90px;
+    height: 60px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav{
+ background-color: #f3faff;
+ box-shadow: 0 0 40px #bbd0e2;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 80px;
+ padding: 5px 100px;
+
+}
+.nav-links ul li{
+    list-style: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.1s ease-in;
+}
+.nav-links ul li:hover{
+    scale: 1.1;
+    color: #db4242;
+    cursor: pointer;
+}
+.nav-links ul{
+    display: flex;
+    gap: 20px;
+}
+.search{
+    display: flex;
+    gap: 10px;
+}
+.search input{
+    border-color: #fdfeff;
+    font-family: "Poppins";
+    padding: 10px;
+    width: 200px;
+    height: 15px;
+    outline: none;
+    border-radius: 5px;
+}
+.search button{
+    font-family: "Poppins";
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    font-weight: 500;
+    cursor:pointer;
+}
+.search button:hover{
+    background-color: var(--accent-color-dark);
+}
+.news-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: auto;
+    margin-top: 150px;
+    gap: 50px;
+    margin-bottom: 40px;
+
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 8px;
+    width:25vw;
+    height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    
+}
+.card:hover{
+    background-color: #d4ecff;
+    cursor: pointer;
+}
+.card-content{
+    padding: 12px;
+    line-height: 30px;
+   
+}
+.news-img img{
+    width: 400px;
+    height: 200px;
+}
+.news-img img{
+    width: 400px;
+    height: 200px;
+}
+.clicked{
+  scale: 1.1;
+  color: #db4242;
+}
