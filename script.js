@@ -1,12 +1,12 @@
 const ApiKey="&apiKey=46e3c71ae88e46e19178c3817717b215";
 const URL="https://newsapi.org/v2/everything?q="
-window.addEventListener("load",()=>fetchNews("india"));
 
 async function fetchNews(newstype){
-    const responce=await fetch(URL+newstype+ApiKey);
+    const responce=await fetch(URL+newstype+ApiKey).catch(err=>("error"));
     const data=await responce.json();
     MakingCard(data.articles)
 }
+window.addEventListener("load",()=>fetchNews("india"));
 
 function MakingCard(Atricles){
     const CardContainer=document.querySelector(".news-cards")
